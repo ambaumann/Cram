@@ -1,4 +1,6 @@
-﻿using CramCore.DomainModels;
+﻿using System.Collections.Specialized;
+using CramCore.DomainModels;
+using Moq;
 using NUnit.Framework;
 
 namespace CramCoreTest.DomainModels
@@ -20,6 +22,18 @@ namespace CramCoreTest.DomainModels
             CatOwner anOwnerNamedBill = new CatOwner("Bill");
             CatOwner anotherOwnerNamedBill = new CatOwner("Bill");
             Assert.AreEqual(anOwnerNamedBill, anotherOwnerNamedBill);
+        }
+
+        [Test]
+        public void TestCatsCollectionSignalsWhenCatIsAdded()
+        {
+            CatOwner anOwner = new CatOwner("Drake");
+            Mock<ICat> mockCat = new Mock<ICat>();
+            bool fired = false;
+            NotifyCollectionChangedEventHandler handler = (a, b) => { fired = true; };
+            anOwner.CatsNotifyCollectionChanged.CollectionChanged += handler;
+            anOwner.AddCat(mockCat.Object);
+            Assert.IsTrue(fired);
         }
     }
 }

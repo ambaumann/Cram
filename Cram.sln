@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CramCore", "CramCore\CramCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CramCoreTest", "CramCoreTest\CramCoreTest.csproj", "{FE285B4E-A8EA-440C-8A92-B67A490F6835}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CramServer", "CramServer\CramServer.csproj", "{EDBE79DE-A949-4239-B05F-208CEE095196}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FE285B4E-A8EA-440C-8A92-B67A490F6835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE285B4E-A8EA-440C-8A92-B67A490F6835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE285B4E-A8EA-440C-8A92-B67A490F6835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBE79DE-A949-4239-B05F-208CEE095196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBE79DE-A949-4239-B05F-208CEE095196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBE79DE-A949-4239-B05F-208CEE095196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBE79DE-A949-4239-B05F-208CEE095196}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
